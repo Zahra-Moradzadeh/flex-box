@@ -1,0 +1,135 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+}
+
+main {
+    background-image: url(leaves.jpg);
+    background-size: cover;
+    padding: 50px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    background-image: url(background.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 400px;
+}
+
+.nav1 ul,
+.nav2 ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+ul li {
+    list-style: none;
+}
+
+li {
+    margin: 1rem;
+}
+
+li :hover {
+    color: darkorange;
+}
+
+a {
+    text-decoration: none;
+    font-size: 20px;
+    padding: 5px;
+    color: black;
+}
+
+a:hover {
+    color: #ff7700;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.LC {
+    display: flex;
+}
+
+.LC div {
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+h4 {
+    padding: 5px;
+}
+
+.copyright p {
+    background: linear-gradient(to left top, rgba(255, 166, 0, 0.659), #ff7700);
+    padding: 20px;
+    text-align: center;
+}
+
+.contact>a>img:hover {
+    background-color: #ff7700;
+}
+
+main div {
+    width: 50%;
+    margin: 0px auto;
+    position: relative;
+}
+
+input {
+    margin: 3px;
+}
+
+label {
+    color: #e6780b;
+}
+
+button[type="submit"] {
+    position: relative;
+    left: 50%;
+    right: auto;
+    padding: 5px;
+    border-radius: 10px;
+    font: small-caps bold 20px/1 sans-serif;
+    background-color: #ff7700;
+}
+
+button[type="submit"]:hover {
+    background-color: rgb(222, 254, 36);
+}
+
+@media (700px<=width<=800px) {
+    header {
+        display: flex;
+        justify-content: space-between;
+        background-image: url(background.jpg);
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+    .nav1 ul,
+    .nav2 ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+}
+
+@media(max-width: 700px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        background-color: orange;
+        background-image: none;
+    }
+    .nav1 ul,
+    .nav2 ul {
+        display: flex;
+        flex-direction: column;
+    }
+}
